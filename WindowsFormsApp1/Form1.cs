@@ -33,13 +33,17 @@ namespace WindowsFormsApp1
         private void btnHashear_Click(object sender, EventArgs e)
         {
             String resultado=encript.hashearTexto(inputText.Text);
-            outPutText.Text = resultado;
+            String resultado2 = encript.hashearTexto(resultado);
+            String resultado3 = encript.hashearTexto(resultado2);
+            outPutText.Text = resultado3;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             String resultado = encript.unhashearTexto(inputText.Text);
-            outPutText.Text = resultado;
+            String resultado2 = encript.unhashearTexto(resultado);
+            String resultado3 = encript.unhashearTexto(resultado2);
+            outPutText.Text = resultado3;
         }
     }
 }
